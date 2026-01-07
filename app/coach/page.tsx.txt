@@ -41,7 +41,7 @@ export default function CoachPage() {
       const res = await fetch("/api/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ input: text, history: historyForApi }),
+        body: JSON.stringify({ input: text, history: next }),
       });
 
       const data = await res.json();

@@ -22,7 +22,6 @@ export default function BookPage() {
 
       <main className="mx-auto max-w-6xl px-6 py-8">
         <div className="grid grid-cols-1 gap-6 lg:grid-cols-12">
-          {/* Left */}
           <section className="lg:col-span-8">
             <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
               <h1 className="text-base font-extrabold text-slate-900">選擇時段</h1>
@@ -42,7 +41,9 @@ export default function BookPage() {
                   <div className="rounded-xl border border-slate-200 bg-slate-50 p-5">
                     <div className="text-sm font-bold text-slate-900">目前尚未開放線上預約</div>
                     <p className="mt-2 text-sm text-slate-600">
-                      請先設定 <code className="rounded bg-white px-1">NEXT_PUBLIC_CALENDLY_URL</code>，設定後重新部署即可顯示預約。
+                      請先在 Static Web Apps 的環境變數設定{" "}
+                      <code className="rounded bg-white px-1">NEXT_PUBLIC_CALENDLY_URL</code>{" "}
+                      後重新部署。
                     </p>
                   </div>
                 )}
@@ -50,7 +51,6 @@ export default function BookPage() {
             </div>
           </section>
 
-          {/* Right */}
           <aside className="lg:col-span-4">
             <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
               <div className="text-sm font-extrabold text-slate-900">諮詢前建議準備</div>
