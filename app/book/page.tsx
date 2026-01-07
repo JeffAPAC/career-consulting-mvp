@@ -6,7 +6,7 @@ import {
   ClipboardCheck,
   Sparkles,
   CalendarDays,
-} from "../components/icons";
+} from "../../components/icons";
 
 function Container({ children }: { children: React.ReactNode }) {
   return <div className="mx-auto max-w-6xl px-6">{children}</div>;
