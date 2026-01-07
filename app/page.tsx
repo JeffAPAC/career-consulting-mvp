@@ -19,6 +19,7 @@ export default function HomePage() {
             並交付一份你可以直接拿去求職或升遷溝通的策略與行動計畫。
           </p>
 
+          {/* ✅ 唯一保留的 CTA 區塊（AI 教練 / 預約諮詢 / Demo） */}
           <div className="mt-6 flex flex-wrap gap-3">
             <Link
               href="/book"
@@ -98,23 +99,10 @@ export default function HomePage() {
               <div className="text-sm font-bold text-slate-900">先從哪裡開始？</div>
               <p className="mt-2 text-sm leading-relaxed text-slate-600">
                 如果你還不確定要怎麼問或怎麼整理問題，建議先使用 AI 職涯教練釐清方向；
-                若需要客製策略與履歷交付，直接預約諮詢。
+                若需要客製策略與履歷交付，可直接預約諮詢。
               </p>
 
-              <div className="mt-4 flex gap-3">
-                <Link
-                  href="/coach"
-                  className="flex-1 rounded-lg border border-slate-300 bg-white px-4 py-2 text-center text-sm font-semibold text-slate-800 hover:bg-slate-50"
-                >
-                  使用 AI 職涯教練
-                </Link>
-                <Link
-                  href="/book"
-                  className="flex-1 rounded-lg bg-emerald-600 px-4 py-2 text-center text-sm font-semibold text-white hover:bg-emerald-700"
-                >
-                  預約諮詢
-                </Link>
-              </div>
+              {/* ✅ 這裡原本有第二組 CTA，已移除，避免重複 */}
             </div>
           </div>
         </div>
@@ -148,7 +136,7 @@ export default function HomePage() {
         ))}
       </section>
 
-      {/* CTA */}
+      {/* ✅ 底部 CTA 區塊保留文案，但移除按鈕，避免重複 */}
       <section className="mt-12 rounded-2xl border border-slate-200 bg-slate-50 p-8">
         <div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
           <div>
@@ -156,23 +144,10 @@ export default function HomePage() {
               準備好開始了嗎？
             </div>
             <div className="mt-1 text-sm text-slate-600">
-              先用 AI 職涯教練釐清方向，或直接預約諮詢取得完整策略與交付。
+              你可以從上方直接選擇：先使用 AI 職涯教練釐清方向，或預約諮詢取得完整策略與交付。
             </div>
           </div>
-          <div className="flex flex-wrap gap-3">
-            <Link
-              href="/coach"
-              className="rounded-lg border border-slate-300 bg-white px-4 py-2.5 text-sm font-semibold text-slate-800 hover:bg-slate-100"
-            >
-              先問 AI 職涯教練
-            </Link>
-            <Link
-              href="/book"
-              className="rounded-lg bg-emerald-600 px-4 py-2.5 text-sm font-semibold text-white hover:bg-emerald-700"
-            >
-              預約諮詢
-            </Link>
-          </div>
+          {/* ✅ 這裡原本有第三組 CTA，已移除 */}
         </div>
       </section>
 
