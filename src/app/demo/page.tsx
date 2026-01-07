@@ -1,4 +1,4 @@
-import AICareerDemo from "@/components/AICareerDemo";
+import AICareerDemo from "../../components/AICareerDemo";
 
 export default function DemoPage() {
   return <AICareerDemo />;

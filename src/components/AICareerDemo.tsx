@@ -14,7 +14,7 @@ import {
   TrendingUp,
   UserCircle,
   Zap,
-} from "@/components/icons";
+} from "./icons";
 
 // --- 資料介面 ---
 interface Skill {
